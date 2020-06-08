@@ -6,7 +6,7 @@
 .hero-section {
   background-color: #edecec;
   font-family: 'Open Sans', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .portfolio {
@@ -19,22 +19,20 @@
 }
 
 .content {
-  margin: 140px auto;
+  margin: 130px auto;
 }
 
 .profile-card {
   margin: 0 auto;
   padding-top: 20px;
-  min-height: 560px;
+  min-height: 588px;
   width: 268px;
-
-/* nuemorphic card css goes here */
+  /* neuomorphic css goes here */
   background-color: #edecec;
   border-radius: 30px;
   box-shadow:
-    10px 10px 14px 0 #cccccc,
-    -10px -10px 16px 4px #fefefe;
-
+    10px 10px 14px #cccccc,
+    -10px -10px 16px #fefefe;
 }
 
 .profile-img {
@@ -79,17 +77,9 @@
   color: #959595;
 }
 
-a:hover {
-  cursor: pointer;
-  color: #5a5a5a !important;
-}
 
 .profile-icon {
   color: #959595;
-}
-
-.profile-icon:hover {
-  color: #5a5a5a !important;
 }
 
 .profile-footer {
@@ -100,13 +90,36 @@ a:hover {
 
 .header {
   min-height: 162px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .user-role {
-  margin: 0;
-  font-size: 16px;
+  margin-top: 14px;
+  font-size: 20px;
   color: #5a5a5a;
+}
+
+.btn-card {
+  height: 52px;
+  width: 52px;
+  display: flex;
+  justify-content: center;
+
+    /* neuomorphic css goes here */
+    background-color: #edecec;
+    border-radius: 16px;
+    box-shadow:
+      6px 6px 8px #cccccc,
+      -6px -6px 8px #fefefe;
+}
+
+.btn-card:hover {
+  cursor: pointer;
+
+  /* active neuomorphic css */
+  box-shadow:
+    2px 2px 2px #cccccc,
+    -2px -2px 2px #fefefe;
 }
 
 .username {
@@ -115,10 +128,22 @@ a:hover {
   font-weight: bold !important;
 }
 
+.progress-meter {
+  margin: 8px 0;
+  background-color: #cccccc;
+  box-shadow:
+    1px 1px 2px #cccccc,
+    -1px -1px 2px #fefefe;
+  border-radius: 2px;
+  height: 5px;
+  width: 100%;
+}
 
-.divider {
-  border: 2px solid #cccccc;
-  height: 2px;
+
+.skill-progress {
+  background-color:#737373;
+  border-radius: 2px;
+  height: 5px;
   width: 70%;
 }
 
@@ -130,14 +155,14 @@ a:hover {
   color: #7c746c;
   font-size: 16px;
   font-weight: bold !important;
-  min-height: 120px;
+  min-height: 110px;
   padding-right: 8px;
 }
 
 .user-about {
   color: #7c746c;
   font-size: 16px;
-  min-height: 120px;
+  min-height: 110px;
   padding-right: 8px;
 }
 
@@ -146,29 +171,90 @@ a:hover {
   color: #737373;
   font-size: 24px;
   font-weight: bold !important;
+  margin: 10px auto;
 }
 
-.section-list {
+.list-card {
+  margin-left: 10px;
+  margin-top: 16px;
+  min-height: 50px;
+  min-width: 190px;
+  font-size: 18px;
+  font-weight: bold !important;
+  color: #959595;
+  border: none;
+
+    /* neuomorphic css goes here */
+    background-color: #edecec;
+    border-radius: 18px;
+    box-shadow:
+      10px 10px 10px #cccccc,
+      -8px -8px 10px #fefefe;
+}
+
+.list-card:hover {
+  cursor: pointer;
+
+  /* active neuomorphic css */
+  box-shadow:
+    2px 2px 4px #cccccc,
+    -2px -2px 4px #fefefe;
+}
+
+.list-card-active, .list-card-active:hover  {
+  color: #5a5a5a !important;
+
+  /* active neuomorphic css */
+  box-shadow:
+    6px 6px 6px #cccccc inset,
+    -6px -6px 6px #fefefe inset;
+}
+
+.list-card > span {
+  text-align: left;
+}
+
+.list-option {
+
+}
+
+.date-span {
+  font-size: 18px;
+  color: #5a5a5a !important;
+}
+
+.option-heading {
+  font-size: 18px;
+  font-weight: bold !important;
+  color: #5a5a5a !important;
+}
+
+.option-location {
+  font-size: 14px;
+  color: #959595;
+  font-weight: normal;
+}
+
+.option-details {
+  font-size: 16px;
+  color: #959595;
+}
+
+.score {
+  font-size: 16px;
+  color: #959595;
+}
+
+.skill {
   margin: 20px auto;
 }
 
-.list-option > div > a {
+.skill-heading {
   font-size: 16px;
-  font-weight: bold !important;
-  color: #7c746c;
+  color: #5a5a5a !important;
 }
 
 
-.list-option > div {
-  font-size: 16px;
-  font-weight: bold !important;
-  color: #7c746c;
-}
-
-.list-option > p {
-  font-size: 12px;
-  color: #7c746c;
-}
 
 
 /* helper css goes here */
@@ -182,12 +268,39 @@ a:hover {
   padding: 15px !important;
 }
 
+.soft-half {
+  padding: 10px !important;
+}
+
+.soft-ends {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
 .push {
   margin: 15px !important;
 }
 
+.push-half--left {
+  margin-left: 8px;
+}
+
+.push-half--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.push--ends {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
 .left {
   text-align: left;
+}
+
+.right {
+  text-align: right;
 }
 
 .hard {
