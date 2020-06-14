@@ -1,10 +1,37 @@
+:root {
+  --background-color: #edecec;
+  --it-color: #959595; /* icon and text color*/
+  --shadow-dark: #c9c9c9;
+  --shadow-light: #ffffff;
+  --prime-color: #5a5a5a;
+  --second-color: #7c746c;
+}
+
 .body {
-  background-color: #edecec !important;
+  background-color: var(--background-color);
   font-family: 'Open Sans', sans-serif !important;
 }
 
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.toggle-btn {
+  height: 40px;
+  width: 90px;
+
+  border-radius: 10px;
+  box-shadow:
+    2px 2px 2px var(--shadow-dark) inset,
+    -2px -2px 2px var(--shadow-light) inset;
+}
+
 .hero-section {
-  background-color: #edecec;
+  background-color: var(--background-color);
   font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
 }
@@ -15,7 +42,7 @@
 }
 
 .profile {
-  margin: 14vh auto;
+  /* margin: 14vh auto; */
 }
 
 .content {
@@ -27,11 +54,11 @@
   min-height: 72vh;
   width: 268px;
   /* neuomorphic css goes here */
-  background-color: #edecec;
+  background-color: var(--background-color);
   border-radius: 30px;
   box-shadow:
-    10px 10px 14px #cccccc,
-    -10px -10px 16px #fefefe;
+    10px 10px 14px var(--shadow-dark),
+    -10px -10px 16px var(--shadow-light);
 }
 
 .profile-img-wrapper {
@@ -42,8 +69,8 @@
   display: flex;
   border-radius: 50%;
   box-shadow:
-    2px 2px 2px #cccccc inset,
-    -2px -2px 2px #fefefe inset;
+    2px 2px 2px var(--shadow-dark) inset,
+    -2px -2px 2px var(--shadow-light) inset;
 }
 
 .profile-img {
@@ -75,17 +102,17 @@
 .profile-text {
   text-align: left;
   font-size: 16px;
-  color: #959595;
+  color: var(--it-color);
   font-weight: bold !important;
 }
 
 .profile-text > a {
-  color: #959595;
+  color: var(--it-color);
 }
 
 
-.profile-icon {
-  color: #959595;
+.icon {
+  color: var(--it-color);
 }
 
 .profile-footer {
@@ -102,7 +129,7 @@
 .user-role {
   margin-top: 14px;
   font-size: 20px;
-  color: #5a5a5a;
+  color: var(--prime-color);
 }
 
 .btn-card {
@@ -112,11 +139,11 @@
   justify-content: center;
 
     /* neuomorphic css goes here */
-    background-color: #edecec;
+    background-color: var(--background-color);
     border-radius: 16px;
     box-shadow:
-      6px 6px 8px #cccccc,
-      -6px -6px 8px #fefefe;
+      6px 6px 8px var(--shadow-dark),
+      -6px -6px 8px var(--shadow-light);
 }
 
 .btn-card:hover {
@@ -124,27 +151,15 @@
 
   /* active neuomorphic css */
   box-shadow:
-    2px 2px 2px #cccccc,
-    -2px -2px 2px #fefefe;
+    2px 2px 2px var(--shadow-dark),
+    -2px -2px 2px var(--shadow-light);
 }
 
 .username {
-  color: #5a5a5a;
+  color: var(--prime-color);
   font-size: 34px;
   font-weight: bold !important;
 }
-
-.progress-meter {
-  margin: 8px 0;
-  background-color: #cccccc;
-  box-shadow:
-    1px 1px 2px #cccccc,
-    -1px -1px 2px #fefefe;
-  border-radius: 2px;
-  height: 5px;
-  width: 100%;
-}
-
 
 .skill-progress {
   background-color:#737373;
@@ -158,7 +173,7 @@
 }
 
 .user-intro {
-  color: #7c746c;
+  color: var(--second-color);
   font-size: 16px;
   font-weight: bold !important;
   min-height: 110px;
@@ -166,7 +181,7 @@
 }
 
 .user-about {
-  color: #7c746c;
+  color: var(--second-color);
   font-size: 16px;
   min-height: 110px;
   padding-right: 8px;
@@ -174,7 +189,7 @@
 
 
 .section-heading {
-  color: #737373;
+  color: var(--second-color);
   font-size: 24px;
   font-weight: bold !important;
   margin: 10px auto;
@@ -187,15 +202,15 @@
   min-width: 190px;
   font-size: 18px;
   font-weight: bold !important;
-  color: #959595;
+  color: var(--it-color);
   border: none;
 
     /* neuomorphic css goes here */
-    background-color: #edecec;
+    background-color: var(--background-color);
     border-radius: 18px;
     box-shadow:
-      10px 10px 10px #cccccc,
-      -8px -8px 10px #fefefe;
+      10px 10px 10px var(--shadow-dark),
+      -8px -8px 10px var(--shadow-light);
 }
 
 .list-card:hover {
@@ -203,17 +218,17 @@
 
   /* active neuomorphic css */
   box-shadow:
-    2px 2px 4px #cccccc,
-    -2px -2px 4px #fefefe;
+    2px 2px 4px var(--shadow-dark),
+    -2px -2px 4px var(--shadow-light);
 }
 
 .list-card-active, .list-card-active:hover  {
-  color: #5a5a5a !important;
+  color: var(--prime-color) !important;
 
   /* active neuomorphic css */
   box-shadow:
-    6px 6px 6px #cccccc inset,
-    -6px -6px 6px #fefefe inset;
+    6px 6px 6px var(--shadow-dark) inset,
+    -6px -6px 6px var(--shadow-light) inset;
 }
 
 .list-card > span {
@@ -222,40 +237,40 @@
 
 .date-span {
   font-size: 18px;
-  color: #5a5a5a !important;
+  color: var(--prime-color) !important;
 }
 
 .date-span-small {
   font-size: 16px;
-  color: #5a5a5a !important;
+  color: var(--prime-color) !important;
 }
 
 .title {
   font-size: 22px;
-  color: #5a5a5a !important;
+  color: var(--prime-color) !important;
   font-weight: bold;
 }
 
 .option-heading {
   font-size: 18px;
   font-weight: bold !important;
-  color: #5a5a5a !important;
+  color: var(--prime-color) !important;
 }
 
 .option-location {
   font-size: 14px;
-  color: #7c746c;
+  color: var(--second-color);
   font-weight: normal;
 }
 
 .option-details {
   font-size: 16px;
-  color: #7c746c;
+  color: var(--second-color);
 }
 
 .score {
   font-size: 16px;
-  color: #7c746c;
+  color: var(--second-color);
 }
 
 .skillset {
@@ -268,7 +283,7 @@
 
 .skill-heading {
   font-size: 16px;
-  color: #5a5a5a !important;
+  color: var(--prime-color) !important;
 }
 
 
@@ -303,6 +318,12 @@
   padding-bottom: 15px !important;
 }
 
+.soft-sides {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+
 .push {
   margin: 15px !important;
 }
@@ -314,6 +335,11 @@
 .push-half--sides {
   margin-left: 8px;
   margin-right: 8px;
+}
+
+.push--sides {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
 }
 
 .push--ends {
