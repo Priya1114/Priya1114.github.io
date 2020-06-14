@@ -15,17 +15,16 @@
 }
 
 .profile {
-  margin: 98px auto;
+  margin: 14vh auto;
 }
 
 .content {
-  margin: 130px auto;
+  margin: 14vh auto;
 }
 
 .profile-card {
-  margin: 0 auto;
-  padding-top: 20px;
-  min-height: 588px;
+  margin: 24px auto;
+  min-height: 72vh;
   width: 268px;
   /* neuomorphic css goes here */
   background-color: #edecec;
@@ -35,10 +34,21 @@
     -10px -10px 16px #fefefe;
 }
 
-.profile-img {
+.profile-img-wrapper {
   margin: 30px auto;
-  height: 220px;
-  width: 220px;
+  padding: 15px;
+  height: 230px;
+  width: 230px;
+  display: flex;
+  border-radius: 50%;
+  box-shadow:
+    2px 2px 2px #cccccc inset,
+    -2px -2px 2px #fefefe inset;
+}
+
+.profile-img {
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   background-image: url('assets/avatar.jpg');
   background-repeat: no-repeat;
@@ -51,16 +61,14 @@
 }
 
 .profile-details {
-  margin-top: 40px;
-  margin-bottom: 46px;
+  margin: 20px 15px 26px 15px;
 }
 
 .profile-details  > .row {
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .profile-image {
-  padding-left: 0 !important;
   text-align: left;
 }
 
@@ -69,8 +77,6 @@
   font-size: 16px;
   color: #959595;
   font-weight: bold !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .profile-text > a {
@@ -90,7 +96,7 @@
 
 .header {
   min-height: 162px;
-  margin: 20px auto;
+  margin: 24px auto;
 }
 
 .user-role {
@@ -214,13 +220,20 @@
   text-align: left;
 }
 
-.list-option {
-
-}
-
 .date-span {
   font-size: 18px;
   color: #5a5a5a !important;
+}
+
+.date-span-small {
+  font-size: 16px;
+  color: #5a5a5a !important;
+}
+
+.title {
+  font-size: 22px;
+  color: #5a5a5a !important;
+  font-weight: bold;
 }
 
 .option-heading {
@@ -231,18 +244,22 @@
 
 .option-location {
   font-size: 14px;
-  color: #959595;
+  color: #7c746c;
   font-weight: normal;
 }
 
 .option-details {
   font-size: 16px;
-  color: #959595;
+  color: #7c746c;
 }
 
 .score {
   font-size: 16px;
-  color: #959595;
+  color: #7c746c;
+}
+
+.skillset {
+  min-height: 105px;
 }
 
 .skill {
@@ -262,6 +279,15 @@
 .center {
   display: flex;
   justify-content: center;
+}
+
+.vt-center {
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .soft {
@@ -306,39 +332,14 @@
 .hard {
   padding: 0px !important;
 }
+.hard--sides {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 .flush {
   margin: 0px!important;
 }
-
-
-
-/* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
-
-
-
-
 
 
 
